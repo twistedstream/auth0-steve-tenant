@@ -1,0 +1,7 @@
+{
+	"enabled": true,
+	"id": "rul_RISldA9ULnoSwKaC",
+	"name": "Restrict-Admin-Access",
+	"order": 18,
+	"stage": "login_success"
+}

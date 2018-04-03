@@ -1,0 +1,7 @@
+{
+	"enabled": true,
+	"id": "rul_N851rZ57WJ9HrxPB",
+	"name": "Contextual-MFA",
+	"order": 7,
+	"stage": "login_success"
+}

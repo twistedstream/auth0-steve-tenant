@@ -1,0 +1,1 @@
+aws s3 sync --delete . s3://steve.a0demo

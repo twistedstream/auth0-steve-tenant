@@ -1,0 +1,7 @@
+{
+	"enabled": true,
+	"id": "rul_jb1g1Fkl5P7cEnZm",
+	"name": "auth0-account-link-extension",
+	"order": 14,
+	"stage": "login_success"
+}

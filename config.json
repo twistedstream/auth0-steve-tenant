@@ -1,0 +1,6 @@
+{
+  "SLACK_INCOMING_WEBHOOK_URL": "https://hooks.slack.com/services/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",
+  "AUTH0_DOMAIN": "steve.au.auth0.com",
+  "AUTH0_CLIENT_SECRET": "2Sy8gAXl8jjaVzvIVq8TocB6UHq7oUKpEvmilLUn4q2U5cjlktTtrxRTg-cxWUjW",
+  "AUTH0_CLIENT_ID": "bUjcXj1cGso6vGg5RQai9gBRwLnYbW0P"
+}

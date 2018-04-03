@@ -1,0 +1,7 @@
+{
+	"enabled": false,
+	"id": "rul_GFewzHZxKfnz04SP",
+	"name": "Redirect-Ask-Mobile-and-Consent",
+	"order": 16,
+	"stage": "login_success"
+}

@@ -1,0 +1,11 @@
+CREATE TABLE Users (
+  id INT NOT NULL AUTO_INCREMENT,
+  email VARCHAR(80) NOT NULL,
+  password CHAR(60) BINARY NOT NULL,
+  first_name VARCHAR(25) NOT NULL,
+  last_name VARCHAR(25) NOT NULL,
+  display_name VARCHAR(50) NOT NULL,
+  migrated BOOL NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE INDEX (email)
+) ENGINE=InnoDB;

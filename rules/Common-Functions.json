@@ -1,0 +1,7 @@
+{
+	"enabled": true,
+	"id": "rul_3cdw474ayIGXndet",
+	"name": "Common-Functions",
+	"order": 4,
+	"stage": "login_success"
+}

@@ -1,0 +1,7 @@
+{
+	"enabled": true,
+	"id": "rul_HvDuyh7dMYjQw8b7",
+	"name": "Create-User-to-Mailchimp-List",
+	"order": 13,
+	"stage": "login_success"
+}

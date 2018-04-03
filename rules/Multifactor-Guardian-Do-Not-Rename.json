@@ -1,0 +1,7 @@
+{
+	"enabled": true,
+	"id": "rul_tvPBnxWCDUgegkpb",
+	"name": "Multifactor-Guardian-Do-Not-Rename",
+	"order": 19,
+	"stage": "login_success"
+}

@@ -1,0 +1,7 @@
+{
+	"enabled": true,
+	"id": "rul_5PUgWFJyH2bdHjtZ",
+	"name": "Preferred-Social-User-Metadata",
+	"order": 9,
+	"stage": "login_success"
+}
