@@ -1,0 +1,7 @@
+{
+	"enabled": false,
+	"id": "rul_6T1KrE6XTWcfpYed",
+	"name": "Get-Create-Contact-in-Salesforce",
+	"order": 12,
+	"stage": "login_success"
+}

@@ -1,0 +1,47 @@
+{
+	"allowed_clients": [],
+	"allowed_logout_urls": [
+		"https://steve-demoapp.herokuapp.com/logout",
+		"http://demoapp.org:3000/logout"
+	],
+	"allowed_origins": [
+		"https://steve-demoapp.herokuapp.com/callback",
+		"http://demoapp.org:3000/callback"
+	],
+	"app_type": "spa",
+	"callback_url_template": false,
+	"callbacks": [
+		"http://steve-demoapp.herokuapp.com/callback",
+		"http://app1.com:3000/callback"
+	],
+	"client_id": "z3jEzbzOENyqRa5Issl52qC7zZ1DW6k4",
+	"cross_origin_auth": false,
+	"custom_login_page_on": true,
+	"description": "",
+	"global": false,
+	"grant_types": [
+		"authorization_code",
+		"http://auth0.com/oauth/grant-type/password-realm",
+		"implicit",
+		"password",
+		"refresh_token"
+	],
+	"is_first_party": true,
+	"is_token_endpoint_ip_header_trusted": false,
+	"jwt_configuration": {
+		"alg": "RS256",
+		"lifetime_in_seconds": 36000,
+		"secret_encoded": false
+	},
+	"logo_uri": "",
+	"name": "Demo SPA App",
+	"oidc_conformant": true,
+	"sso": true,
+	"sso_disabled": false,
+	"tenant": "steve",
+	"token_endpoint_auth_method": "none",
+	"web_origins": [
+		"https://steve-demoapp.herokuapp.com",
+		"http://demoapp.org:3000"
+	]
+}

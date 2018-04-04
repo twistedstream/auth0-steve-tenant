@@ -1,5 +1,5 @@
 {
-	"enabled": true,
+	"enabled": false,
 	"id": "rul_N851rZ57WJ9HrxPB",
 	"name": "Contextual-MFA",
 	"order": 7,

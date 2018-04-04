@@ -1,5 +1,5 @@
 {
-	"enabled": true,
+	"enabled": false,
 	"id": "rul_jeX71Q1yEXkOt5wd",
 	"name": "Enrich-Identity-and-Access-Tokens",
 	"order": 19,
