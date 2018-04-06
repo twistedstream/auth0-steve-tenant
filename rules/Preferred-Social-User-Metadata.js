@@ -1,7 +1,8 @@
 function (user, context, callback) {
   // For Logging Events
-  var log = context.log ? context.log : console.log;
+  var log = global.log ? global.log : console.log;
   var RULE = 'Preferred Social User Metadata';
+  log('INFO', RULE, 'Starting');
 
   // Setup fields from social providors with some taking priority
   user.user_metadata = user.user_metadata || {};
@@ -27,15 +28,15 @@ function (user, context, callback) {
   // if not take what we can find!
   function findAttr(attrName, providorName) {
     // Already set, return
-    if (attrName in user) return user[attrName];
+    if (attrName in user && user[attrName]) return user[attrName];
         
     for (var identity of user.identities) {
       var profileData = identity.profileData || {};
-      if (identity.providor === providorName && attrName in profileData) {
+      if (identity.providor === providorName && attrName in profileData && profileData[attrName]) {
         log('INFO', RULE, 'Setting ' + attrName + ' from ' + identity.providor);
         return profileData[attrName];
       }
-      if (attrName in profileData) {
+      if (attrName in profileData && profileData[attrName]) {
         return profileData[attrName];
       }
     }

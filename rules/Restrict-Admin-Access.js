@@ -1,7 +1,8 @@
 function (user, context, callback) {
   // For Logging Events
-  var log = context.log ? context.log : console.log;
+  var log = global.log ? global.log : console.log;
   var RULE = 'Restrict Admin Access';
+  log('INFO', RULE, 'Starting');
   
   var requestedScopes = context.request.query.scope.split(' ');
 

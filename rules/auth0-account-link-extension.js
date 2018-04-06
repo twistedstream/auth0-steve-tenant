@@ -108,9 +108,9 @@ function (user, context, callback) {
         return new Promise(function (resolve, reject) {
           management.getUser({ id: decodedToken.sub }, function (err, linkedUser) {
             if (err) return reject(err);
-
-            user.user_metadata = merge(linkedUser.user_metadata, user.user_metadata || {});
-            user.app_metadata = merge(linkedUser.app_metadata, user.app_metadata || {});
+            
+            user.user_metadata = merge(user.user_metadata || {}, linkedUser.user_metadata);
+            user.app_metadata = merge(user.app_metadata || {}, linkedUser.app_metadata);
 
             apiCall({
               method: 'POST',

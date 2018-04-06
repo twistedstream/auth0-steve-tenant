@@ -2,6 +2,6 @@
 	"enabled": false,
 	"id": "rul_jeX71Q1yEXkOt5wd",
 	"name": "Enrich-Identity-and-Access-Tokens",
-	"order": 19,
+	"order": 20,
 	"stage": "login_success"
 }

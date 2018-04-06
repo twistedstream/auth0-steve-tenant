@@ -1,14 +1,14 @@
 function redirectToConsentForm(user, context, callback) {
 
   // For Logging Events
-  var log = context.log ? context.log : console.log;
+  var log = global.log ? global.log : console.log;
   var RULE = 'Redirect Ask Mobile and Consent';
+  log('INFO', RULE, 'Starting');
   
   var jwt = require('jsonwebtoken');
   var Promise = require('promise');
   
   var PASSWORDLESS_APP_URL = 'https://' + auth0.domain.replace('auth0.com', '') + 'webtask.io/mobilereg';
-  console.log(PASSWORDLESS_APP_URL);
   user.user_metadata = user.user_metadata || {};
 
   // Skip if passwordless connection
@@ -62,13 +62,6 @@ function redirectToConsentForm(user, context, callback) {
 
   function shouldLink(mobile) {
     // Check is mobile is registered as passwordless and linked to this account
-    console.log(user.identities.filter(function (id) {
-      return id.provider === 'sms' &&
-        id.profileData &&
-        id.profileData.phone_verified &&
-        id.profileData.phone_number === mobile;
-      }));
-    
     return user.identities.filter(function (id) {
       return id.provider === 'sms' &&
         id.profileData &&

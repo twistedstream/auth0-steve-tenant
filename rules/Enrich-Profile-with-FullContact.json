@@ -2,6 +2,6 @@
 	"enabled": false,
 	"id": "rul_lET1776hI1qVHxME",
 	"name": "Enrich-Profile-with-FullContact",
-	"order": 11,
+	"order": 12,
 	"stage": "login_success"
 }

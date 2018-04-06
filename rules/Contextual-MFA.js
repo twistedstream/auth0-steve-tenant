@@ -1,15 +1,16 @@
 function (user, context, callback) {
   
   // For Logging Events
-  var log = context.log ? context.log : console.log;
+  var log = global.log ? global.log : console.log;
   var RULE = 'Contextual MFA';
+  log('INFO', RULE, 'Starting');
   
   user.user_metadata = user.user_metadata || {}; 
   user.app_metadata = user.app_metadata || {}; 
   
   // Check Risk Score from ThisData
   if (user.risk > 0.5) {
-    log('INFO', RULE, 'Forcing MFA for user ' + user.name + ' due high risk', true);
+    log('INFO', RULE, 'Forcing MFA for user ' + user.name + ' due high risk score of 0.5 > ' + user.risk, true);
     forceMFA();
   }
 

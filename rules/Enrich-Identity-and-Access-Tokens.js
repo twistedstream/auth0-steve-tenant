@@ -1,5 +1,9 @@
 function (user, context, callback) {
-  // Default namespace
+  // For Logging Events
+  var log = global.log ? global.log : console.log;
+  var RULE = 'Enrich Tokens';
+  
+  log('INFO', RULE, 'Starting');// Default namespace
   var namespace = 'https://demoapp.com/';
 
   var user_metadata = user.user_metadata || {};

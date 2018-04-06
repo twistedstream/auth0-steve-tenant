@@ -1,7 +1,8 @@
 function (user, context, callback) {
   // For Logging Events
-  var log = context.log ? context.log : console.log;
+  var log = global.log ? global.log : console.log;
   var RULE = 'Account Takeover Prevention';
+  log('INFO', RULE, 'Starting');
 
   // Get this from your ThisData account
   var apiKey = configuration.THISDATA_API_KEY;
@@ -37,7 +38,7 @@ function (user, context, callback) {
     } else {
       // If the risk is high then block the login
       log('INFO', RULE, 'score is ' + b.score);
-      user.score = b.score;
+      user.risk = b.score;
       context.accessToken['http://compnay.com/riskScore'] = b.score;
       log('INFO', RULE, user.score);
       callback(null, user, context);

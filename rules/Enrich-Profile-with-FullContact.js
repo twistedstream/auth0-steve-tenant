@@ -1,7 +1,8 @@
 function (user, context, callback) {
     // For Logging Events
-  var log = context.log ? context.log : console.log;
+  var log = global.log ? global.log : console.log;
   var RULE = 'Enrich Profile via Fullcontact Service';
+  log('INFO', RULE, 'Starting');
   
   var FULLCONTACT_KEY = configuration.FULLCONTACT_APIKEY;
 

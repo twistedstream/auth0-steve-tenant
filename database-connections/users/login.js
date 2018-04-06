@@ -1,7 +1,6 @@
 function login(email, password, callback) {
   // Slack channel
   var slackChannel = '#se-demo-notify';
-  console.log('test');
 
   var connection = mysql({
     host: 'steve-auth0-demo.cldwzmczuw0a.us-east-2.rds.amazonaws.com',
@@ -15,9 +14,6 @@ function login(email, password, callback) {
   var query = "SELECT id, email, password, first_name, last_name, display_name FROM users WHERE email = ?";
   
   connection.query(query, [email], function (err, results) {
-      console.log('tes2');
-      console.log(err);
-
     if (err) return callback(err);
     if (results.length === 0) return callback(new WrongUsernameOrPasswordError(email));
     var user = results[0];
@@ -36,6 +32,10 @@ function login(email, password, callback) {
           given_name: user.first_name,
           family_name: user.last_name,
           name: user.display_name,
+          email_verified: false,
+          app_metadata: { 
+            migrated: true 
+          }
         });
         
         // Set migrated flag to true in background

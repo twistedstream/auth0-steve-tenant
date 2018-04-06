@@ -1,8 +1,9 @@
 function (user, context, callback) {
 
   // For Logging Events
-  var log = context.log ? context.log : console.log;
+  var log = global.log ? global.log : console.log;
   var RULE = 'MailChimp Sync User';
+  log('INFO', RULE, 'Starting');
 
   var MAILCHIMP_LIST_ID = 'b5d4be9d4f';
   var MAILCHIMP_LIST_UID = '180193';

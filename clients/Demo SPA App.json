@@ -11,8 +11,8 @@
 	"app_type": "spa",
 	"callback_url_template": false,
 	"callbacks": [
-		"http://steve-demoapp.herokuapp.com/callback",
-		"http://app1.com:3000/callback"
+		"https://steve-demoapp.herokuapp.com/callback",
+		"http://demoapp.org:3000/callback"
 	],
 	"client_id": "z3jEzbzOENyqRa5Issl52qC7zZ1DW6k4",
 	"cross_origin_auth": false,

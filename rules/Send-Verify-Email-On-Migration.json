@@ -1,0 +1,7 @@
+{
+	"enabled": true,
+	"id": "rul_rupedsoeXmKoT1fC",
+	"name": "Send-Verify-Email-On-Migration",
+	"order": 6,
+	"stage": "login_success"
+}

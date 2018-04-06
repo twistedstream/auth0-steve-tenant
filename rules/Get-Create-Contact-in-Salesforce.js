@@ -1,8 +1,9 @@
 function (user, context, done) {
 
   // For Logging Events
-  var log = context.log ? context.log : console.log;
+  var log = global.log ? global.log : console.log;
   var RULE = 'Lookup Contact in SFDC';
+  log('INFO', RULE, 'Starting');
 
   //Populate the variables below with appropriate values
   var SFCOM_CLIENT_ID = configuration.SALESFORCE_CLIENT_ID;

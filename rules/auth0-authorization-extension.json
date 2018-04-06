@@ -2,6 +2,6 @@
 	"enabled": false,
 	"id": "rul_WV3GyyUVVPOVFZwn",
 	"name": "auth0-authorization-extension",
-	"order": 17,
+	"order": 18,
 	"stage": "login_success"
 }

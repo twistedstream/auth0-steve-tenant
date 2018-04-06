@@ -4,7 +4,7 @@ function (user, context, callback) {
   var slackChannel = '#se-demo-notify';
 
   // Used to log messages
-  context.log = function (level, rule, msg, to_slack) {
+  global.log = function (level, rule, msg, to_slack) {
     var slack = require('slack-notify')(configuration.SLACK_HOOK_URL);
     var logLevel = level.toUpperCase();
 
