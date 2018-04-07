@@ -1,0 +1,6 @@
+header.dashboard-header nav #header {
+    background-size: 100px 40px;
+    background-image: url('https://s3-ap-southeast-2.amazonaws.com/steve.a0demo/logo.png');
+    background-position: 0;
+    background-repeat: no-repeat;
+}

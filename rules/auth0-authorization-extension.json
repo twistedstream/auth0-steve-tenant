@@ -1,5 +1,5 @@
 {
-	"enabled": false,
+	"enabled": true,
 	"id": "rul_WV3GyyUVVPOVFZwn",
 	"name": "auth0-authorization-extension",
 	"order": 18,
